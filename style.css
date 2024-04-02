@@ -31,6 +31,7 @@ body{
     background-color: var(--beigedingz);
     border-top: solid black 2px;
     border-bottom: solid black 2px;
+    z-index: 2;
 }
 
 .menu .top {
@@ -66,10 +67,20 @@ body{
     transition: linear-gradient 1s;
 }
 
-.menu .toggle-menu {
+.menu .toggle-menu-btn {
     height: 24px;
     width: 24px;
     transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.toggleMenu {
+    width: 100vw;
+    height: 20vh;
+    background-color: red;
+    position: absolute;
+    transform: translateY();
+    
 }
 
 .main {

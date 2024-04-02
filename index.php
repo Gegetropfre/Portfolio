@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src=""></script>
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,11 +15,11 @@
         </div>
         <div class="bot">
             <ul>
-                <li>SHOP<img class="toggle-menu" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>ABOUT<img class="toggle-menu" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>WORKSHOPS<img class="toggle-menu" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>CONNECT <img class="toggle-menu" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>THE FACTORY<img class="toggle-menu" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li>SHOP<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li>ABOUT<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li>WORKSHOPS<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li>CONNECT <img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li>THE FACTORY<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
             </ul>
         </div>
 
