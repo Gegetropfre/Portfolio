@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: SpoofTrial;
+    src: url(assets/fonts/SpoofTrial-Medium.otf);
+}
+
+
+:root {
+    --rosedingz : #ffd3eb;
+    --beigedingz : #fffbef;
+    --jaunedingz : #f8de91;
+    --vertdingz : #a1e2bc;
+
+}
+
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family:SpoofTrial;
+}
+
+.menu{
+    width: 100vw;
+    height: 25vh;
+    background-color: var(--beigedingz);
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+.menu .top {
+    height: 60%;
+    border-bottom: solid black 2px;
+    display: flex;
+}
+.menu .toggle-menu{
+    margin-left: 0.4rem;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.menu .bot {
+    height: 40%;
+}
+
+.menu .bot ul {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 30rem 1fr;
+    
+}
+.menu .bot li {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .bot li:hover {
+    background-color: var(--vertdingz);
+    transition: linear-gradient 1s;
+}
+
+.menu .toggle-menu {
+    height: 24px;
+    width: 24px;
+    transform: rotate(180deg);
+}
+
+.main {
+    height: 75vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.main .left {
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    height: 100%;
+    width: 50vw;
+    background-color: var(--rosedingz);
+
+}
+.main .right {
+    border-bottom: solid black 2px;
+    height: 100%;
+    width: 50vw;
+    background-color: var(--jaunedingz);
+
+}
