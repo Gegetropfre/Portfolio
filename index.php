@@ -15,11 +15,11 @@
         </div>
         <div class="bot">
             <ul>
-                <li>SHOP<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>ABOUT<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>WORKSHOPS<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>CONNECT <img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
-                <li>THE FACTORY<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li class ="li-menu" >SHOP<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li class ="li-menu">ABOUT<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li class ="li-menu">WORKSHOPS<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li class ="li-menu">CONNECT <img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
+                <li class ="li-menu">THE FACTORY<img class="toggle-menu-btn" src='assets/icons/arrow-up-svgrepo-com.svg'> </img></li>
             </ul>
         </div>
 

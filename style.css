@@ -27,7 +27,7 @@ body{
 
 .menu{
     width: 100vw;
-    height: 25vh;
+    height: 10rem;
     background-color: var(--beigedingz);
     border-top: solid black 2px;
     border-bottom: solid black 2px;
@@ -40,13 +40,12 @@ body{
     display: flex;
 }
 .menu .toggle-menu{
-    margin-left: 0.4rem;
-    cursor: pointer;
-    transform: rotate(90deg);
+    
 }
 
 .menu .bot {
     height: 40%;
+    background-color: white;
 }
 
 .menu .bot ul {
@@ -56,7 +55,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 30rem 1fr;
     
 }
-.menu .bot li {
+.li-menu {
     border: solid black 1px;
     display: flex;
     justify-content: center;
@@ -72,14 +71,29 @@ body{
     width: 24px;
     transform: rotate(180deg);
     cursor: pointer;
+    transition: transform 0.15s linear;
+
+}
+.menu .toggle-menu-btn-toggled{
+    transform: rotate(0);
+    transition: transform 0.15s linear;
 }
 
 .toggleMenu {
     width: 100vw;
-    height: 20vh;
-    background-color: red;
+    height: 40vh;
+    background-color: #ffffff;
     position: absolute;
-    transform: translateY();
+    top: 0rem;
+    height: 10rem;
+    transition: 0.2s linear ;
+    
+}
+.toggleMenuToggled {
+    top: 10rem;
+    transition: 0.2s linear;
+    max-height: 80vh;
+    border-bottom : solid black 2px;
     
 }
 
