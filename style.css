@@ -6,7 +6,20 @@
 @font-face {
     font-family: SpoofTrial;
     src: url(assets/fonts/SpoofTrial-Medium.otf);
+    
 }
+@font-face {
+    font-family: Lobster;
+    src: url(assets/fonts/Lobster/Lobster-Regular.ttf);
+}
+.tac-one-regular {
+    font-family: "Tac One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  
+  
 
 
 :root {
@@ -27,7 +40,7 @@ body{
 
 .menu{
     width: 100vw;
-    height: 10rem;
+    height: 9rem;
     background-color: var(--beigedingz);
     border-top: solid black 2px;
     border-bottom: solid black 2px;
@@ -38,9 +51,11 @@ body{
     height: 60%;
     border-bottom: solid black 2px;
     display: flex;
-}
-.menu .toggle-menu{
-    
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    font-family: SpoofTrial  ;
+
 }
 
 .menu .bot {
@@ -60,10 +75,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+    color: black;
 }
-.menu .bot li:hover {
+
+.li-menu-toggled{
     background-color: var(--vertdingz);
-    transition: linear-gradient 1s;
+
+}
+
+.li-menu:hover {
+    background-color: var(--vertdingz);
+    transition: 0.2s linear;
 }
 
 .menu .toggle-menu-btn {
@@ -85,37 +108,25 @@ body{
     background-color: #ffffff;
     position: absolute;
     top: 0rem;
-    height: 10rem;
+    height: 9rem;
     transition: 0.2s linear ;
+    padding: 1rem;
+    border-bottom : solid black 2px;
+
     
 }
 .toggleMenuToggled {
-    top: 10rem;
+    top: 9rem;
     transition: 0.2s linear;
     max-height: 80vh;
     border-bottom : solid black 2px;
-    
 }
 
-.main {
-    height: 75vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.liste-menu{
+    list-style-type: none;
 }
 
-.main .left {
-    border-bottom: solid black 2px;
-    border-right: solid black 2px;
-    height: 100%;
-    width: 50vw;
-    background-color: var(--rosedingz);
-
-}
-.main .right {
-    border-bottom: solid black 2px;
-    height: 100%;
-    width: 50vw;
-    background-color: var(--jaunedingz);
-
+a {
+    text-decoration : none;
+    color: inherit;
 }

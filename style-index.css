@@ -1,0 +1,37 @@
+.main {
+    height: 75vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.main .left {
+    padding: 1rem;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    height: 100%;
+    width: 50vw;
+    background-color: var(--rosedingz);
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+}
+
+#nomPrenom{
+
+    font-family: Special Elite;
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+.main .right {
+    padding: 1rem;
+
+    border-bottom: solid black 2px;
+    height: 100%;
+    width: 50vw;
+    background-color: var(--jaunedingz);
+}
+
