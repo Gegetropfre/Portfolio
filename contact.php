@@ -5,9 +5,10 @@
 <link rel="stylesheet" href="style-contact.css">
 <body>
     <div class="contact">
-        <div class="left"></div>
+        <div class="left"><p>sdkfhqksd</p></div>
         <div class="right"></div>
     </div>  
+    <iframe class="cv" src="assets\CV HETE Audrci dev.pdf" type="">
 </body>
 
 

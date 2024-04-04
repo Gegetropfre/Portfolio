@@ -1,70 +1,48 @@
-
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 const menuBtns = document.querySelectorAll('.toggle-menu-btn');
-const toggleMenu = document.createElement('div')
-let listeMenu = document.createElement('ul')
+const toggleMenu = document.createElement('div');
+const listeMenu = document.createElement('ul');
 
-const liMenu = document.querySelectorAll('.li-menu')
+toggleMenu.classList.add('toggleMenu');
+listeMenu.classList.add('liste-menu');
+toggleMenu.appendChild(listeMenu);
+body.appendChild(toggleMenu);
 
-toggleMenu.classList.add('toggleMenu')
-listeMenu.classList.add('liste-menu')
+let previousBtn = null;
+let previousParentBtn = null;
 
+function toggleBtn(btn) {
+    btn.classList.toggle('toggle-menu-btn-toggled');
+}
 
-toggleMenu.appendChild(listeMenu)
-body.appendChild(toggleMenu)
+function toggleParentBtn(parentBtn) {
+    parentBtn.classList.toggle('li-menu-toggled');
+}
 
-let previousBtn = null
-let previousParentBtn = null
-
+function resetState(currentBtn, parentBtn) {
+    if (previousBtn !== null && currentBtn !== previousBtn) {
+        console.log('Le bouton cliqué est différent du précédent');
+        toggleBtn(document.getElementById(previousBtn)); // Toggle the previous button
+        toggleParentBtn(previousParentBtn); // Toggle the previous parent button
+    }
+}
 
 menuBtns.forEach(menuBtn => {
-    menuBtn.addEventListener('click', (e) =>{
+    menuBtn.addEventListener('click', (e) => {
+        const parentBtn = menuBtn.parentNode;
+        const currentBtn = menuBtn.id;
 
-        parentBtn = menuBtn.parentNode
+        toggleBtn(menuBtn);
+        toggleParentBtn(parentBtn);
 
-        
-        let currentBtn = menuBtn.id
+        resetState(currentBtn, parentBtn);
 
-        menuBtns.forEach(btn => {
-            btn.classList.remove('toggle-menu-btn-toggled')
-            
-        })
-
-
-        if(previousBtn !== null){
-
-            if(currentBtn !== previousBtn) {
-                console.log('le bouton cliqué pas le meme que le précedent')
-            } else {
-                console.log('le bouton cliqué est le meme que le précedent')
-                menuBtn.classList.toggle('toggle-menu-btn-toggled')
-                displayMenu(parentBtn.id)
-            }
-        } else {
-            console.log('pas de précédent bouton')
-        }
-
-
-        if(previousParentBtn !== null){
-            
-            if(parentBtn !== previousParentBtn){
-                previousParentBtn.classList.toggle('li-menu-toggled')
-            }
-        } 
-
-
-        
-               
-        menuBtn.classList.toggle('toggle-menu-btn-toggled')
-        toggleMenu.classList.toggle('toggleMenuToggled')
-        parentBtn = menuBtn.parentNode
-        parentBtn.classList.toggle('li-menu-toggled')
-        console.log(parentBtn.id)
+        toggleMenu.classList.toggle('toggleMenuToggled');
+        console.log(parentBtn.id);
         displayMenu(parentBtn.id);
 
-        previousBtn = currentBtn
-        previousParentBtn = parentBtn
-
+        previousBtn = currentBtn;
+        previousParentBtn = parentBtn;
     });
 });
 
@@ -82,6 +60,19 @@ function displayMenu(parentId){
                 <li> </li>
             `
             break;  
+        case "li-menu-contact":
+            listeMenu.innerHTML = `
+                <li><a href="contact.php">Informations </a></li>
+                <li><a href="contact.php/"> Contacter </a></li>
+                <li> </li>
+                <li> </li>
+            `
+            break;
+        case "li-menu-veilles":
+            listeMenu.innerHTML = `
+                <li><a href="contact.php">Blockchain </a></li>
+            `
+            break;
         case "li-menu-contact":
             listeMenu.innerHTML = `
                 <li><a href="contact.php">Informations </a></li>

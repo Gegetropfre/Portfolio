@@ -1,13 +1,51 @@
 
-
-
-
-.cv {
-    width: 50vw;
-    height: 80vh;
+:root {
+    --rosedingz : #ffd3eb;
+    --beigedingz : #fffbef;
+    --jaunedingz : #f8de91;
+    --vertdingz : #a1e2bc;
+    --violetdingz : #f6eeff;
 }
 
 .contact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: salmon;
 }
+
+
+.contact .left {
+    background-color:var(--jaunedingz);
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+
+.contact .right {
+    background-color:var(--violetdingz);
+
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+
+}
+
+.cv {
+    width: 35vw;
+    height: 70vh;
+    border: none;
+    
+}
+
+
+
+
+
+

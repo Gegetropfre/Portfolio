@@ -12,11 +12,27 @@
     font-family: Lobster;
     src: url(assets/fonts/Lobster/Lobster-Regular.ttf);
 }
+@font-face {
+    font-family: Nooks;
+    src: url(assets/fonts/tt_nooks/TT\ Nooks\ Trial\ Regular.otf);
+}
+@font-face {
+    font-family: Nooks Bold;
+    src: url(assets/fonts/tt_nooks/TT\ Nooks\ Trial\ Bold.otf);
+}
+
+@keyframes scroll {
+    0% {transform : translateX(0)}
+    100% {transform : translateX(-100vw )}
+
+
+}
 .tac-one-regular {
     font-family: "Tac One", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
+
   
   
   
@@ -27,7 +43,23 @@
     --beigedingz : #fffbef;
     --jaunedingz : #f8de91;
     --vertdingz : #a1e2bc;
-
+    --violetdingz : #f6eeff;
+}
+.ad{
+    width: 100vw;
+    height: 2.5rem;
+    background-color: var(--jaunedingz);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10px;
+    padding-right: 1rem;
+    font-family: Lobster;
+}
+.ad h2 {
+    animation: scroll 25s linear infinite;
+    position: relative;
+    right: -50px;
 }
 
 
@@ -49,18 +81,19 @@ body{
 
 .menu .top {
     height: 60%;
-    border-bottom: solid black 2px;
     display: flex;
     padding: 1rem;
+    padding-left: 4rem;
     flex-direction: column;
     justify-content: center;
-    font-family: SpoofTrial  ;
+    font-family: Nooks Bold;
 
 }
 
 .menu .bot {
     height: 40%;
     background-color: white;
+    border-top : solid black 2px;
 }
 
 .menu .bot ul {
@@ -71,7 +104,7 @@ body{
     
 }
 .li-menu {
-    border: solid black 1px;
+    border-right: solid black 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,19 +137,20 @@ body{
 
 .toggleMenu {
     width: 100vw;
-    height: 40vh;
+    height: 11.5rem;
     background-color: #ffffff;
     position: absolute;
-    top: 0rem;
+    top: 2.5rem;
     height: 9rem;
     transition: 0.2s linear ;
-    padding: 1rem;
     border-bottom : solid black 2px;
-
+    padding-left: 5rem;
+    padding-top: 2rem;
+    
     
 }
 .toggleMenuToggled {
-    top: 9rem;
+    top: 11.5rem;
     transition: 0.2s linear;
     max-height: 80vh;
     border-bottom : solid black 2px;
@@ -124,6 +158,10 @@ body{
 
 .liste-menu{
     list-style-type: none;
+}
+
+.liste-menu li {
+    margin-bottom: 1rem;
 }
 
 a {
