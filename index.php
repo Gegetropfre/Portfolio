@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="style-index.css">
 <?php include 'partials/head.php' ?>
-<div class="ad">
-        <h2>Promo : étudiant gratos cherche alternance</h2>
-</div>
+<?php include 'partials/ad.php' ?>
 <?php include 'partials/header.php'  ?>
 <body>
     <div class="main">

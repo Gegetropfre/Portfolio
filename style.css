@@ -110,6 +110,7 @@ body{
     align-items: center;
     transition: 0.3s;
     color: black;
+    cursor: pointer;
 }
 
 .li-menu-toggled{
