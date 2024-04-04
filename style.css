@@ -67,7 +67,7 @@ body{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 30rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr 30vw 1fr;
     
 }
 .li-menu {

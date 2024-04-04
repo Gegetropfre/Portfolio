@@ -45,10 +45,10 @@ menuBtns.forEach(menuBtn => {
         }
 
 
-        if(previousParentBtn !== null){
+        if(previousParentBtn !== null){                                 
             
             if(parentBtn !== previousParentBtn){
-                previousParentBtn.classList.toggle('li-menu-toggled')
+                previousParentBtn.classList.remove('li-menu-toggled')
             }
         } 
 
