@@ -1,11 +1,11 @@
 <?php include 'partials/head.php' ?>
-<?php include 'partials/ad.php' ?>
-<?php include 'partials/header.php' ?>
 
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style-contact.css">
 <body>
+    <?php include 'partials/ad.php' ?>
+    <?php include 'partials/header.php' ?>
     <div class="contact-header">
         <h1><img  class ="main-bolt"src="assets\icons\bolt4-svgrepo-com.svg" alt="">Contact<img  class ="main-diamond" src="assets\icons\diamond1-svgrepo-com.svg" alt=""></h1>
     </div>
