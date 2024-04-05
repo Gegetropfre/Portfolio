@@ -1,37 +1,120 @@
-.main {
-    height: 75vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
+:root {
+    --rosedingz : #ffd3eb;
+    --beigedingz : #fffbef;
+    --jaunedingz : #f8de91;
+    --vertdingz : #a1e2bc;
+    --violetdingz : #f6eeff;
+    --vertflashydingz : #caff33;
 }
 
-.main .left {
-    padding: 1rem;
-    border-bottom: solid black 2px;
-    border-right: solid black 2px;
-    height: 100%;
-    width: 50vw;
-    background-color: var(--rosedingz);
+
+
+
+.main{
+    height: 16vh;
+    width: 100vw;
+    background-color: var(--violetdingz);
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
-
-}
-
-#nomPrenom{
-
-    font-family: Special Elite;
-    font-size: 3rem;
-    font-weight: 100;
-
-}
-.main .right {
-    padding: 1rem;
-
+    align-items: center;
     border-bottom: solid black 2px;
-    height: 100%;
-    width: 50vw;
-    background-color: var(--jaunedingz);
+    
+}
+.main h1 {
+    font-family: monstac;
+    font-size: 6rem;
 }
 
+.main-bolt {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    bottom: 1rem;
+    right: 1rem;
+    transition: 2s linear;
+}
+.main-bolt:hover {
+
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+    cursor: pointer;
+    transition: 3s linear;
+
+}
+.main .main-bubble {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    right: 10px;
+    color: black;
+}
+
+
+
+
+.ligne2{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--beigedingz);
+    border-bottom: solid black 2px;
+
+}
+
+.ligne2 .left{
+    border-right: solid black 2px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    padding-left: 5rem;
+
+}
+
+.ligne2 .left h1 {
+    font-family: madiosa;
+    font-size: 4rem;
+
+}
+
+.ligne2 .left .ligne2-exclamation{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    right: 10px;
+    top: 2px
+}
+
+.ligne2-arrow{
+    transform: rotate(90deg);
+    width: 3rem;
+    height: 8rem;
+    position: absolute;
+    left: 18rem;
+    top: 73vh;
+    display:none;
+
+}
+.ligne2 .right{
+}
+
+
+
+
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
