@@ -78,26 +78,34 @@
 :root {
     --rosedingz : #ffd3eb;
     --beigedingz : #fffbef;
-    --jaunedingz : #f8de91;
+    /* --jaunedingz : #f8de91; */
+    --jaunedingz : #edf57a;
     --vertdingz : #a1e2bc;
     --violetdingz : #f6eeff;
 }
 .ad{
-    width: 200vw;
-    height: 4vh;
+    width: 100vw;
+    height: 8vh;
     background-color: var(--jaunedingz);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1rem;
+    font-size: 12px;
     padding-right: 1rem;
     font-family: siffea;
 }
 .ad h2 {
     animation: scroll 60s linear infinite;
+    margin-right: 5rem;
+    white-space: nowrap;
     position: relative;
-    right: -50px;
-    margin-right: 7rem;
+    left: 100vw;
+}
+
+.ad img {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 3rem;
 }
 
 
@@ -110,7 +118,7 @@ body{
 
 .menu{
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     background-color: var(--beigedingz);
     border-top: solid black 2px;
     border-bottom: solid black 2px;
@@ -168,6 +176,7 @@ body{
     transform: rotate(180deg);
     cursor: pointer;
     transition: transform 0.15s linear;
+    background-color: transparent;
 
 }
 .menu .toggle-menu-btn-toggled{
@@ -177,10 +186,10 @@ body{
 
 .toggleMenu {
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     background-color: #ffffff;
     position: absolute;
-    top: 4vh;
+    top: 8vh;
     transition: 0.2s linear ;
     border-bottom : solid black 2px;
     padding-left: 5rem;
@@ -189,7 +198,7 @@ body{
     
 }
 .toggleMenuToggled {
-    top: 11.5rem;
+    top: 28vh;
     transition: 0.2s linear;
     max-height: 80vh;
     border-bottom : solid black 2px;

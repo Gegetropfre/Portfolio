@@ -3,7 +3,7 @@
     --beigedingz : #fffbef;
     --jaunedingz : #f8de91;
     --vertdingz : #a1e2bc;
-    --violetdingz : #f6eeff;
+    --violetdingz : #efe8f7;
     --vertflashydingz : #caff33;
 }
 
@@ -11,7 +11,7 @@
 
 
 .main{
-    height: 16vh;
+    height: 36vh;
     width: 100vw;
     background-color: var(--violetdingz);
     display: flex;
@@ -22,7 +22,7 @@
 }
 .main h1 {
     font-family: monstac;
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 .main-bolt {
@@ -52,7 +52,7 @@
 
 
 .ligne2{
-    height: 70vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: var(--beigedingz);
@@ -63,7 +63,8 @@
 .ligne2 .left{
     border-right: solid black 2px;
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     padding-top: 2rem;
     padding-left: 5rem;
 
@@ -76,11 +77,15 @@
 }
 
 .ligne2 .left .ligne2-exclamation{
-    width: 1.8rem;
-    height: 1.8rem;
+    height: 2.7rem;
     position: relative;
-    right: 10px;
-    top: 2px
+    right: 2rem;
+    transform: rotate(13deg);
+}
+.ligne2 .left .ligne2-exclamation:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+    cursor: pointer;
+    transition: 3s linear;
 }
 
 .ligne2-arrow{
@@ -94,8 +99,14 @@
 
 }
 .ligne2 .right{
+    height: 100%;
+    width: 100%;
 }
 
+.ligne3{
+    height: 50vh;
+
+}
 
 
 
