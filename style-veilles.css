@@ -1,0 +1,222 @@
+:root {
+    --rosedingz : #ffd3eb;
+    --beigedingz : #fffbef;
+    --jaunedingz : #f8de91;
+    --vertdingz : #a1e2bc;
+    --violetdingz : #efe8f7;
+    --vertflashydingz : #caff33;
+}
+
+.veilles {
+    width: 100vw;
+    height:72vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--beigedingz);
+    
+}
+.veilleDiv{
+    cursor: pointer;
+    border-right: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.blockchain-left {
+    background-color: azure;
+    border-right: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 2;
+}
+    .blockchain-left h2 {
+        position: relative;
+        bottom: 2.5rem;
+        font-size: 2rem;
+        transition: 0.6s;
+        transform: translateX();
+    }
+        .blockchainh2Active{
+            transform: translateX(-100%);
+        }
+
+    #blockchainImg{
+        height: 10rem;
+
+    }
+        
+        .imgBlockchainActive{
+            animation: tourne 5s infinite;
+        }
+
+    .leftActive{
+        width: 10vw;
+    }
+
+.blockchain-middle-left{
+    border-right: solid black 2px;
+    
+}
+
+    .blockchain{
+        width: 100%;
+        height: 100%;
+        background-color: var(--beigedingz);
+        transition: 0.3s;
+        outline : solid black 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        padding:1rem;
+    }
+    .blockchain:hover{
+        border-radius: 30px;
+        outline : solid black 2px;
+        background-color: var(--jaunedingz);
+        
+    }
+    .rocketImg{
+        width: 75%;
+        height: 45%;
+        margin-top: 1rem;
+        border-radius: 20px;
+        position: relative;
+        bottom: 4rem;
+    }
+
+.blockchain-middle-right{
+    
+
+}
+
+.blockchain-right{
+    background-color: azure;
+    
+}
+
+
+
+.blockchain-desc{
+    width: 15vw;
+    height: 72vh;
+    position: absolute;
+    top: 28vh ;
+    left: 10vw;
+    border-right: solid black 2px ;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.div-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.veilles-btns {
+    width: 70%;
+    height: 2rem;
+position: relative;
+top: 2rem;
+  appearance: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  border-radius: 30px;
+}
+
+.article-img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 5px;
+    left: 1rem;
+}
+
+/* .veilles-btns:disabled {
+  pointer-events: none;
+} */
+
+.veilles-btns:hover {
+  color: #fff;
+  background-color: var(--vertdingz);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  border: solid black 2px;
+}
+
+/* .veilles-btns:active {
+  box-shadow: none;
+  transform: translateY(0);
+} */
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+@keyframes tourne {
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+ html.is-changing .transition-fade {   transition: opacity 0.25s;   opacity: 1; } /* Define the styles for the unloaded pages */ html.is-animating .transition-fade {   opacity: 0; }
+
+
+
+
+
+
+/* CSS */
