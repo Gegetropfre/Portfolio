@@ -18,6 +18,22 @@
                 <p>1ère année de BTS SIO option SLAM (Solutions logicielles et applications métier)</p>
             </div>
             <div class="right">
+                <div class="techno">
+                    <img src="assets\icons\php-icon.png" alt="" class="techno-img php-img">
+
+                </div>
+                <div class="techno">
+                    <img src="assets\icons\react-icon.png" alt="" class="techno-img react-img">
+
+                </div>
+                <div class="techno">
+                    <img src="assets\icons\javascript-icon.png" alt="" class="techno-img js-img">
+
+                </div>
+                <div class="techno">
+                    <img src="assets\icons\c++-icon.png" alt="" class="techno-img c-img">
+
+                </div>
             </div>
         </div>
         <div class="ligne3">

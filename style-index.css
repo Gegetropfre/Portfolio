@@ -108,6 +108,47 @@
 
 }
 
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    
+}
+
+.techno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.techno-img{
+    height: 6rem;
+    width: 6rem;
+    transition: 0.3s;
+}
+        
+.techno-img:hover{
+    animation: shake 1s linear;
+
+}
+
+.php-img{
+
+
+}
+.react-img{
+
+
+}
+.js-img{
+
+
+}
+.c-img{
+
+
+}
 
 
 

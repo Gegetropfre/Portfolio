@@ -123,6 +123,10 @@
     
 }
 
+.displayNone{
+    display: none;
+}
+
 .div-btn{
     display: flex;
     justify-content: center;

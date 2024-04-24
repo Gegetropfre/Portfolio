@@ -167,7 +167,7 @@ function handleMouseOut(){
         veilles.addEventListener('mouseout', handleMouseOut)
         blockchainDesc.addEventListener('mouseout', handleMouseOut)
 
-    }, 1000)
+    }, 300)
 
     
 
